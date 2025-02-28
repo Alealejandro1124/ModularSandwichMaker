@@ -11,13 +11,13 @@ class Cashier:
         # Each Half-Dollars is 50 cents
         total += int(input("How many Half-Dollars?: ")) * 0.50
         # Each quarter is 25 cents
-        total += int(input("How many quarters?: ")) * 0.25
+        total += int(input("How many Quarters?: ")) * 0.25
         # Each dime is 10 cents
-        total += int(input("How many dimes?: ")) * 0.1
+        total += int(input("How many Dimes?: ")) * 0.1
         # Each nickel is 5 cents
-        total += int(input("How many pennies?: ")) * 0.05
+        total += int(input("How many Nickels?: ")) * 0.05
         # Each penny is 1 cent
-        total += int(input("How many nickles?: ")) * 0.01
+        total += int(input("How many Pennies?: ")) * 0.01
         return total
 
     def transaction_result(self, coins, cost):
