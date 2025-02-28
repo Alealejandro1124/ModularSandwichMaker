@@ -15,3 +15,7 @@ class SandwichMaker:
 
     def make_sandwich(self, sandwich_size, order_ingredients):
        """Deduct required ingredients from resources to make the sandwich."""
+        #Subtract each ingredient from the machine_resources
+       for item, amount, in order_ingredients.items():
+           self.machine_resources[item] -= amount
+       print(f"A {sandwich_size} sandwich has been made.")
