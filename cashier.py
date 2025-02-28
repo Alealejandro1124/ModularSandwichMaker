@@ -25,7 +25,7 @@ class Cashier:
            Hint: use the output of process_coins() function for cost input"""
         if coins >= cost:
             change = round(coins - cost, 2)
-            print(f"Transaction successful. Your change is ${change}.")
+            print(f"Transaction successful. Your change is ${change:.2f}.")
         else:
             print("Insufficient coins. Money refunded.")
             return False
