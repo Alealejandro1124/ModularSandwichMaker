@@ -26,6 +26,7 @@ class Cashier:
         if coins >= cost:
             change = round(coins - cost, 2)
             print(f"Transaction successful. Your change is ${change:.2f}.")
+            return True
         else:
             print("Insufficient coins. Money refunded.")
             return False
